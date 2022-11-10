@@ -21,5 +21,13 @@ document.querySelector('#account-button').addEventListener('click', function(){
     console.log('fvgbhn')
 })
 
+document.querySelector('.account-button').addEventListener('click',function(){
+    window.location.href='/bustling-wheel-1520/signup/signup.html'
+})
+document.querySelector('.footer-button').addEventListener('click',function(){
+    window.location.href='/bustling-wheel-1520/signup/signup.html'
+})
 
-
+document.querySelector('#cont-products>div:nth-child(1)').addEventListener('click', function(){
+    window.location.href='/bustling-wheel-1520/productpage/productpage.html'
+})
