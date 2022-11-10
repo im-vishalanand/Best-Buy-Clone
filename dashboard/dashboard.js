@@ -31,6 +31,3 @@ document.querySelector('.footer-button').addEventListener('click',function(){
 document.querySelector('#cont-products>div:nth-child(1)').addEventListener('click', function(){
     window.location.href='/bustling-wheel-1520/productpage/productpage.html'
 })
-
-
-
