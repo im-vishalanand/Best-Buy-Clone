@@ -1,9 +1,11 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow-x: hidden;
 }
+
+/* navbar-css */
+
 #navbar-top{
     width: 88vw;
     display: flex;
@@ -17,6 +19,7 @@
     top: 0;
 }
 #navbar-top-left{
+    /* width: 55vw; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,6 +66,7 @@
     cursor: pointer;
 }
 #navbar-top-right{
+    /* width: 16vw; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -95,121 +99,76 @@
     color: white;
     text-decoration: underline;
 }
+
 .container{
-    width: 90%;
-    margin: auto;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+#left-cont{
+    border: 1px solid rgb(124, 124, 124);
+    width: 65vw;
+    border-radius: 3px;
+    /* height: 300px; */
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+}
+#left-cont>div{
+    display: flex;
+}
+#left-cont>div>div{
     /* border: 1px solid red; */
-    /* margin-top: -90px; */
-    
-}
-.left-cont{
-    border: 1px solid rgb(134, 134, 134);
-    width: 18%;
-    position: fixed;
-    top: 0;
-    margin-top: 100px;
-    margin-bottom: 20px;
-    padding: 0 20px;
-    z-index: -1;
-    border-radius: 5px;
-}
-.left-cont h4{
-    margin-bottom: 10px;
-    margin-top: 15px;
-    color: rgb(29, 37, 44);
-}
-.left-cont h6{
-    color: rgb(3, 82, 210);
-    margin-bottom: 15px;
-
-}
-.left-cont ul, .left-cont li{
-    color: rgb(3, 82, 210);
-    margin: 5px 0;
-    font-size: 13px;
-}
-li{
-    padding-left: 12px;
-}
-
-.right-cont{
-    width: 75%;
-    margin-left: 25%;
-    margin-bottom: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 10px;
-    padding: 10px;
-}
-  
-.right-cont{
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.right-cont>div{
-    padding: 10px;
-    height: 420px;    
-}
-.right-cont>div>div:nth-child(1){
-    height: 18vw;
-}
-.right-cont>div>div:nth-child(2){
-    height: 90px;
-}
-
-.right-cont img{
-    width: 250px;
+    width: 40%;
+    margin: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0 2px 8px; */
     display: block;
     margin: auto;
+    padding: 10px 0;
 }
-.right-cont img:hover{
-    padding: 5px;
-    cursor: pointer;
-}
-.right-cont p{
-    text-align: left;
-    color: rgb(3, 82, 210);
+p{
+    color:rgb(3, 82, 210);
     
 }
-.right-cont p:hover{
-    text-decoration: underline;
-    cursor: pointer;
-    padding: 5px 0;
-
+h3{
+    margin: 15px 0;
 }
-.right-cont h4{
-    margin: 5px 0;
-}
-.right-cont button{
-    padding: 8px 20px;
-    background-color: rgb(255, 242, 0);
-    border: none;
-    border-radius: 5px;
-    margin: 5px 0;
-}
-.right-cont button:hover{
-    background-color: rgb(236, 222, 20);
-}
-#selectfilter{
-    padding: 10px;
-    display: flex;
+img{
+    display: block;
     margin: auto;
-    margin-top: 83px;
-    justify-content: right;
-    background-color: white;
-    width: 70vw;
-    margin-left: 28vw;
+    padding: 5px 0;
 }
-#sort{
-    padding: 5px 20px;
-    font-size: 16px;
-    margin-right: 10vw;
-    background-color: white;
-    border: 1px solid black;
+#left-cont span{
+    margin: 0 5px;
+}
+#left-cont button{
+    padding: 5px 10px;
+    margin: 0 5px;
+}
+
+
+
+
+#right-cont{
+    border: 1px solid rgb(124, 124, 124);
+    width: 28vw;
     border-radius: 3px;
+    position: fixed;
+    margin-left: 68vw;
+    height: 400px;
+    
+    z-index: -1;
+}
+#right-cont>div{
+    padding: 10px;
+}
+#right-cont h2{
+    padding: 10px 5px;
+    color: rgb(77, 76, 76);
+    border-bottom: 1px solid rgb(192, 189, 189);
 }
 
 
@@ -237,6 +196,9 @@ li{
 
 
 
+
+
+/* footer-css */
 #footer{
     background-color: rgb(240, 242, 244);
 }
@@ -291,7 +253,7 @@ li{
 }
 #footer-details{
     background-color: white;
-    width: 25vw;
+    width: 23vw;
     padding: 20px;
     border-radius: 5px;
 }
@@ -356,7 +318,7 @@ li{
     text-decoration: none;
     font-size: 11px;
     margin-right: 5px;
-    color: rgb(3, 82, 210);;
+    color: rgb(3, 82, 210);
 }
 #footer>div:nth-child(3)>a:hover{
     text-decoration: underline;
@@ -364,5 +326,5 @@ li{
 #footer>div:nth-child(3)>p{
     color: rgb(73, 73, 73);
     font-size: 13px;
-    margin: 20px 0 40px 0;
+    padding: 20px 0 40px 0;
 }

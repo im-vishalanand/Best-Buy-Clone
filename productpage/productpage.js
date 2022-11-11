@@ -39,10 +39,6 @@ function displayData(data){
         nameDiv.append(name)
         let price=document.createElement('h4')
         price.innerText="Price: ₹ "+element.price
-        // let cost=document.createElement('p');
-        // cost.innerText="Rs: "+element.price;
-        // let rating=document.createElement('p');
-        // rating.innerText="Rating: "+element.rating.rate;
 
         let button=document.createElement('button');
         button.innerText="Add to Cart";
@@ -51,6 +47,7 @@ function displayData(data){
         button.addEventListener('click', function(){
             LSData.push(element);
             localStorage.setItem('cartData', JSON.stringify(LSData));
+            alert("Product added to cart")
         })
 
         div.append(imgDiv,nameDiv,price,button);
@@ -58,4 +55,22 @@ function displayData(data){
         
     });
 }
+
+document.querySelector('#sort').addEventListener('change', function(){
+    let selected=document.querySelector('#sort').value;
+
+    if(selected==""){
+        return LSData;
+    }
+    if(selected=="LTH"){
+        LSData.sort((a,b)=>(+a.price)-(+b.price))
+    }
+    if(selected=="HTL"){
+        LSData.sort((a,b)=>(+b.price)-(+a.price))
+    }
+
+    displayData(LSData)
+  })
+
+
 
