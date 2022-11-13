@@ -35,6 +35,8 @@ User can fill up the details for Sign Up and the page will be redirected to the 
 
 All the products related to the particular category is shown here with the help of api call.
 
+Sort functionality is also added to it so that users can sort in terms of price low to high and high to low.
+
 ![image](https://user-images.githubusercontent.com/108060013/201510070-bd9df2d1-a1cf-47f9-b18c-b1e4e6340a83.png)
 
 <br>
