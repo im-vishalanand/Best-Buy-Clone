@@ -62,6 +62,7 @@
 
         if(password==1234){
             alert("Payment successful !!!")
+            window.location.href='dashboard.html';
         }
         else{
             alert("Wrong Otp! Enter correct Otp.")
@@ -70,7 +71,7 @@
 
     let resend=document.querySelector('#resend');
     resend.addEventListener('click', function(){
-        alert("Otp resent! Please enter the otp again!")
+        alert("Otp resent! Please enter the otp again!");
         window.location.href='otp.html';
     })
 
