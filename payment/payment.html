@@ -11,6 +11,99 @@
             margin: 0;
             font-family: sans-serif;
         }
+        #navbar-top{
+            width: 88vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 70, 190);
+            border-bottom: 1px solid white;
+            padding: 5px 8vw 5px 4vw;
+            overflow: hidden;
+            position: fixed;    
+            top: 0;
+        }
+        #navbar-top-left{
+            /* width: 55vw; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        #navbar-top-left>div{
+            margin-right: 30px;
+        }
+        #navbar-logo{
+            width: 90px;
+        }
+        #logo{
+            cursor: pointer;
+            width: 90px;
+        }
+        .menu{
+            margin-top: 4px;
+            color: white;
+            font-size: 18px;
+        }
+        .navbar-button{
+            display: flex;
+            border: none;
+            cursor: pointer;
+            background-color: rgb(0, 70, 190);
+            font-weight: bold;
+        }
+        #navbar-search{
+            display: flex;
+        }
+        #navbar-input{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 35vw; 
+            font-size: 15px;
+            color: rgb(121, 121, 121);
+        }
+        .navbar-search-button{
+            position:absolute;
+            margin: 9px 0 0 34vw;
+            background-color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #navbar-top-right{
+            /* width: 16vw; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            margin-right: 40px;
+        }
+        #account>button{
+            background-color: rgb(0, 70, 190);
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        #account-button-name{
+            color: white;
+            font-size: 20px;
+            margin: 0 5px;
+        }
+        #cart-button{
+            font-size: 22px;
+            margin-left: 20px;
+        }
+        #navbar-cart-name{
+            position: absolute;
+            margin-top: -1px;
+            margin-left: 5px;
+            color: white;
+        }
+        #navbar-cart-name:hover,#account:hover{
+            color: white;
+            text-decoration: underline;
+        }
         .container{
             width: 50vw;
             margin: auto;
@@ -18,9 +111,10 @@
             margin-top: 20px;
             box-shadow: rgba(0,0,0,0.35) 0 2px 8px;
             border-radius: 5px;
+            margin-top: 120px;
         }
         h1{
-            background-color: rgb(129, 187, 66);
+            background-color: rgb(0, 70, 190);
             height: 60px;
             display: flex;
             justify-content: center;
@@ -67,6 +161,41 @@
     </style>
 </head>
 <body>
+    <!-- navbar-top -->
+
+    <div id="navbar-top">
+        <div id="navbar-top-left">
+            <div id="navbar-logo">
+                <img src="/bustling-wheel-1520/website-logo.png" id="logo">
+            </div>
+            <div id="navbar-menu-button">
+                <button class="navbar-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="white"><path d="M19.25 7.5H4.75c-.41 0-.75-.34-.75-.75S4.34 6 4.75 6h14.5c.41 0 .75.34.75.75s-.34.75-.75.75zm0 5.25H4.75c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h14.5c.41 0 .75.34.75.75s-.34.75-.75.75zm0 5.25H4.75c-.41 0-.75-.34-.75-.75s.34-.75.75-.75h14.5c.41 0 .75.34.75.75s-.34.75-.75.75z"></path></svg><div class="menu">MENU</div></button>
+            </div>
+            <div id="navbar-search">
+                <input type="text" id="navbar-input" placeholder="Search ख़रीDARI">
+                <button type="submit" class="navbar-search-button" title="submit search" aria-label="submit search"><span class="header-search-icon" aria-hidden="true">
+                    <svg aria-hidden="true" role="img" viewBox="0 0 100 100" width="22" height="22" fill="#0046be"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" xml:space="preserve"><path d="m28.15 26.7-7.03-7.02a9.93 9.93 0 1 0-17.6-6.29 9.93 9.93 0 0 0 16.22 7.67l7.03 7.03a.97.97 0 0 0 1.38 0c.38-.38.38-1 0-1.38zM5.48 13.4a7.98 7.98 0 1 1 15.95.02 7.98 7.98 0 0 1-15.95-.02z"></path></svg></svg>
+                </span></button>
+            </div>
+        </div>
+        <div id="navbar-top-right">
+            <div id="account" class="account-button">
+                <button id="account-button" type="button">
+                    <svg class="account-button-icon" fill="white" width="27" height="27">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                            <path d="M16 .76C7.6.76.76 7.6.76 16S7.6 31.24 16 31.24 31.24 24.4 31.24 16 24.4.76 16 .76zm10.23 23.7V23.2c0-2.6-1.14-5.06-3.12-6.75a.98.98 0 1 0-1.27 1.5 6.9 6.9 0 0 1 2.44 5.25v3.19a13.21 13.21 0 0 1-16.56 0V23.2a6.94 6.94 0 0 1 4.76-6.55A5.86 5.86 0 1 0 16 6.1a5.88 5.88 0 0 0-4.96 9 8.92 8.92 0 0 0-5.27 8.1v1.26A13.3 13.3 0 0 1 16 2.71a13.3 13.3 0 0 1 10.23 21.76zm-14.15-12.5a3.92 3.92 0 0 1 7.84 0 3.92 3.92 0 0 1-7.84 0z"></path></svg></svg>
+                        <span id="account-button-name">Account</span>
+                        <!-- <svg class="account-arrow" viewBox="0 0 100 100" fill="white" width="14" height="14"><svg viewBox="0 0 34 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.05 21.65a.97.97 0 0 1-.6-.2l-12.33-9.3A.98.98 0 0 1 4.3 10.6l11.75 8.85 11.74-8.85a.98.98 0 0 1 1.18 1.56l-12.34 9.3a.97.97 0 0 1-.58.2"></path></svg></svg></button> -->
+            </div>
+            <div id="cart-button">
+                <a href="/bustling-wheel-1520/cart/cart.html">
+                 <svg width="24px" fill="#fff" viewBox="0 0 32 32"><path d="M9.829 19.824h17.575c.452 0 .845-.31.951-.75l2.9-12.137a.978.978 0 0 0-.952-1.205H9.876a.978.978 0 0 0 0 1.955h19.188L26.632 17.87H9.829c-.064 0-.124.015-.188.019L6.107 1.818a.978.978 0 0 0-.955-.769H1.697a.978.978 0 0 0 0 1.956h2.669l3.418 15.543a3.465 3.465 0 0 0-1.432 2.797c0 1.304.73 2.428 1.793 3.023a3.994 3.994 0 0 0-.932 2.548 4.04 4.04 0 0 0 4.034 4.035 4.04 4.04 0 0 0 4.035-4.035c0-.77-.228-1.482-.603-2.094h7.59a3.999 3.999 0 0 0-.597 2.094c0 2.225 1.809 4.035 4.034 4.035s4.034-1.81 4.034-4.035c0-1.926-.914-2.916-1.682-3.407-.936-.6-1.956-.647-2.247-.647-.024 0-.042.004-.065.005H9.83a1.523 1.523 0 0 1-1.521-1.522c0-.838.682-1.521 1.521-1.521zm1.418 9.172a2.082 2.082 0 0 1-2.079-2.08c0-1.146.933-2.08 2.08-2.08s2.078.934 2.078 2.08-.932 2.08-2.079 2.08zm16.539-2.08c0 1.147-.934 2.08-2.08 2.08a2.082 2.082 0 0 1-2.08-2.08c0-1.146.934-2.08 2.08-2.08H25.719c.06 0 .119-.006.175-.017.29.013.91.113 1.34.515.366.341.552.874.552 1.582z"></path></svg>
+                 <span id="navbar-cart-name">Cart</span>
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <h1>Payment Details</h1>
         <div>
@@ -94,17 +223,11 @@
                         <td><input type="" name="" id="card"></td>
                     </tr>
                     <tr>
-                        <td><label for="number">Start Date</label></td>
-                        <td><input type="" name="" id="startMonth" placeholder="Month"></td>
-                        <td><input type="" name="" id="startYear" placeholder="Year"></td>
-                    </tr>
-                    <tr>
                         <td><label for="number">Expiry</label></td>
-                        <td><input type="" name="" id="expMonth" placeholder="Month"></td>
-                        <td><input type="" name="" id="expYear" placeholder="Year"></td>
+                        <td><input type="" name="" id="exp" placeholder="MM/YY"></td>
                     </tr>
                     <tr>
-                        <td><label for="number">Security Code</label></td>
+                        <td><label for="number">CVV</label></td>
                         <td><input type="password" name="" id="sec"></td>
                     </tr>
                     <tr>
@@ -127,15 +250,12 @@
 
     document.querySelector('#submit').addEventListener('click', function(){
         let card=document.querySelector('#card').value;
-        let startMonth=document.querySelector('#startMonth').value;
-        let startYear=document.querySelector('#startYear').value;
-        let expMonth=document.querySelector('#expMonth').value;
-        let expYear=document.querySelector('#expYear').value;
+        let exp=document.querySelector('#exp').value;
         let sec=document.querySelector('#sec').value;
 
 
 
-        if(card=="1234 5678 1234 1234" && startMonth=="01/01" && startYear=="10/10" && expMonth=="02/02" && expYear=="11/11" && sec=="123"){
+        if(card=="1234 5678 1234 1234" && exp=="02/24" && sec=="123"){
             
             window.location.href = "/bustling-wheel-1520/payment/otp.html";
         }
