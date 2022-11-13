@@ -47,7 +47,7 @@ function displayData(data){
             cartPrice-=(+element.price)
             document.querySelector('#priceTotal').innerText=cartPrice;
             totalfig.innerText=cartPrice-585;
-            localStorage.setItem('buy', cartPrice-495);
+            localStorage.setItem('buy', cartPrice-495+90);
 
             if(qty.innerText=="0"){
                 data.splice(index,1);
@@ -64,7 +64,7 @@ function displayData(data){
           cartPrice+=(element.price)*(+qty.innerText-1)
           document.querySelector('#priceTotal').innerText=cartPrice;
           totalfig.innerText=cartPrice-585;
-          localStorage.setItem('buy', cartPrice-495);
+          localStorage.setItem('buy', cartPrice-495+90);
         })
         let remove=document.createElement('button');
         remove.innerText="Remove";
