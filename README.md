@@ -6,18 +6,21 @@ Shop ख़रीDARI for electronics, computers, appliances, cell phones, video ga
 
 
 <br>
+
 **First Page or the Landing Page.**
 
 ![image](https://user-images.githubusercontent.com/108060013/201508940-9443eb1a-1b65-4995-bf06-85f096d0f4cf.png)
 
 <br>
-**Main Page or the DashboardPpage.**
+
+**Main Page or the Dashboard Page.**
 
 Main page consists of all the details realated to the website along with all the links which will redirect to another page of the website.
 
 ![image](https://user-images.githubusercontent.com/108060013/201509956-3e9a466d-7236-410f-88a5-7bac529a52fd.png)
 
 <br>
+
 **Sign Up Page/Sign In Page.**
 
 User can fill up the details for Sign Up and the page will be redirected to the Sign In page.
