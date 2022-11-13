@@ -29,6 +29,7 @@ User can fill up the details for Sign Up and the page will be redirected to the 
 
 ![image](https://user-images.githubusercontent.com/108060013/201510008-224be492-f99e-4565-8913-3250fa539197.png)
 
+<br>
 
 **Product Page.**
 
@@ -36,6 +37,7 @@ All the products related to the particular category is shown here with the help 
 
 ![image](https://user-images.githubusercontent.com/108060013/201510070-bd9df2d1-a1cf-47f9-b18c-b1e4e6340a83.png)
 
+<br>
 
 **Footer.**
 
@@ -43,6 +45,7 @@ All the extra details are shown here. All the social media handles is shown here
 
 ![image](https://user-images.githubusercontent.com/108060013/201510076-aa901422-d5b0-46bd-9bef-7a38e4453e9a.png)
 
+<br>
 
 **Cart Page.**
 
@@ -50,6 +53,7 @@ All the added Product added from the product page will be displayed here. User c
 
 ![image](https://user-images.githubusercontent.com/108060013/201510086-ed88b47d-acf1-43f7-a995-585b99c4e476.png)
 
+<br>
 
 **Payment Page.**
 
