@@ -6,7 +6,7 @@ document.querySelector('.account-button').addEventListener('click',function(){
 })
 
 let LSData=JSON.parse(localStorage.getItem('cartData'))
-console.log(LSData)
+// console.log(LSData)
 
 let container=document.querySelector('#left-cont');
 let container2=document.querySelector('#right-cont');
@@ -19,7 +19,7 @@ let cartPrice=LSData.reduce((acc,ele)=>{
 //   let LSPrice=localStorage.getItem('buy')||0
   let LSPrice=cartPrice
 
-  console.log(cartPrice)
+//   console.log(cartPrice)
 
 function displayData(data){
     container.innerHTML=null
@@ -47,7 +47,7 @@ function displayData(data){
             cartPrice-=(+element.price)
             document.querySelector('#priceTotal').innerText=cartPrice;
             totalfig.innerText=cartPrice-585;
-            localStorage.setItem('buy', cartPrice);
+            localStorage.setItem('buy', cartPrice-495);
 
             if(qty.innerText=="0"){
                 data.splice(index,1);
@@ -64,7 +64,7 @@ function displayData(data){
           cartPrice+=(element.price)*(+qty.innerText-1)
           document.querySelector('#priceTotal').innerText=cartPrice;
           totalfig.innerText=cartPrice-585;
-          localStorage.setItem('buy', cartPrice);
+          localStorage.setItem('buy', cartPrice-495);
         })
         let remove=document.createElement('button');
         remove.innerText="Remove";
@@ -104,14 +104,14 @@ function displayData(data){
     let deliveryName=document.createElement('p')
     deliveryName.innerText="Delivery"
     let deliveryfig=document.createElement('p');
-    deliveryfig.innerText="- 90"
+    deliveryfig.innerText="+ 90"
     delivery.append(deliveryName,deliveryfig)
     
     let total=document.createElement('div')
     let totalName=document.createElement('p')
     totalName.innerText="Total Amount"
     let totalfig=document.createElement('p');
-    totalfig.innerText=cartPrice-585;
+    totalfig.innerText=cartPrice-405;
     total.append(totalName,totalfig)
     
     let placeOrder=document.createElement('button');
@@ -122,10 +122,6 @@ function displayData(data){
     
     rightDiv.append(h2,price,discount,delivery, total,placeOrder);
     
-    
-    document.querySelector('.placeOrder').addEventListener('click', function(){
-        console.log('ghjk')
-    })
     document.querySelector('.placeOrder').addEventListener('click', function(){
         window.location.href='/bustling-wheel-1520/payment/payment.html'
     })
