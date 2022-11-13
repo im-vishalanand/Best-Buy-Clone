@@ -70,10 +70,10 @@ document.querySelector('#sort').addEventListener('change', function(){
     if(selected==""){
         return out;
     }
-    if(selected=="LTH"){
+    if(selected=="HTL"){
         out.sort((a,b)=>(+a.price)-(+b.price))
     }
-    if(selected=="HTL"){
+    if(selected=="LTH"){
         out.sort((a,b)=>(+b.price)-(+a.price))
     }
 
