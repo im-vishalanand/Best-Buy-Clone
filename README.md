@@ -30,6 +30,17 @@ Shop ख़रीDARI for electronics, computers, appliances, cell phones, video ga
 
 ![image](https://user-images.githubusercontent.com/108060013/201510086-ed88b47d-acf1-43f7-a995-585b99c4e476.png)
 
+**Payment Page.**
+
+![image](https://user-images.githubusercontent.com/108060013/201510118-a49aca64-7e72-4ee9-8488-cc7b68387998.png)
+
+**Otp Page.**
+
+![image](https://user-images.githubusercontent.com/108060013/201510137-cdd67bf3-ba14-4f53-a145-ebaf894af5da.png)
+
+
+
+
 
 
 
