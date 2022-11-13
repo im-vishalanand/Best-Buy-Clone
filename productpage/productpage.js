@@ -10,11 +10,19 @@ document.querySelector('.footer-button').addEventListener('click',function(){
 
 const url="https://636a23c5b10125b78fd19a2e.mockapi.io/laptops"
 
+let out=[];
+
 async function getData(){
-    let res= await fetch(url);
-    let data= await res.json();
-    console.log(data)
-    displayData(data);
+    try {
+        let res= await fetch(url);
+        let data= await res.json();
+        console.log(data)
+        displayData(data);
+        out=[...data];
+        
+    } catch (error) {
+        alert(error)
+    }
 }
 getData();
 let container=document.querySelector('.right-cont')
@@ -60,17 +68,23 @@ document.querySelector('#sort').addEventListener('change', function(){
     let selected=document.querySelector('#sort').value;
 
     if(selected==""){
-        return LSData;
+        return out;
+        // window.location.reload()
     }
     if(selected=="LTH"){
-        LSData.sort((a,b)=>(+a.price)-(+b.price))
+        out.sort((a,b)=>(+a.price)-(+b.price))
     }
     if(selected=="HTL"){
-        LSData.sort((a,b)=>(+b.price)-(+a.price))
+        out.sort((a,b)=>(+b.price)-(+a.price))
     }
 
-    displayData(LSData)
+    displayData(out)
   })
+
+
+  
+
+
 
 
 

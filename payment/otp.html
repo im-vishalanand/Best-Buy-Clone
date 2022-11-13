@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otp</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h2{
+            margin: 20px 0;
+        }
+        p{
+            color: rgb(121, 121, 121);
+        }
+        .container{
+            width: 45vw;
+            margin: auto;
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px 0;
+            box-shadow: rgba(0,0,0,0.35) 0 2px 6px;
+        }
+        input{
+            width: 80px;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        button{
+            display: block;
+            margin: auto;
+            font-size: 20px;
+            padding: 10px 40px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+        .container>p:nth-child(5){
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Please enter the otp received on your mobile number.</h2>
+        <p>A One-Time Password has sent been sent to ******1710.</p>
+        <input type="password" id="password" maxlength="4">
+        <button>Validate</button>
+        <p id="resend">Resend One-Time Password?</p>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector('button').addEventListener('click', function(){
+        let password=document.querySelector('#password').value;
+
+        if(password==1234){
+            alert("Payment successful !!!")
+        }
+        else{
+            alert("Wrong Otp! Enter correct Otp.")
+        }
+    })
+
+    let resend=document.querySelector('#resend');
+    resend.addEventListener('click', function(){
+        alert("Otp resent! Please enter the otp again!")
+        window.location.href='otp.html';
+    })
+
+</script>
