@@ -5,7 +5,7 @@ document.querySelector('.account-button').addEventListener('click',function(){
     window.location.href='/bustling-wheel-1520/signup/signup.html'
 })
 
-let LSData=JSON.parse(localStorage.getItem('cartData'))
+let LSData=JSON.parse(localStorage.getItem('cartData'))||[]
 // console.log(LSData)
 
 let container=document.querySelector('#left-cont');

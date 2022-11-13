@@ -243,6 +243,13 @@
 </html>
 <script>
 
+    document.querySelector('#navbar-logo').addEventListener('click', function(){
+        window.location.href='/bustling-wheel-1520/dashboard/dashboard.html'
+    });
+    document.querySelector('.account-button').addEventListener('click',function(){
+        window.location.href='/bustling-wheel-1520/signup/signup.html'
+    })
+
     let productPrice=localStorage.getItem('buy');
 
     let price=document.querySelector('#price');
